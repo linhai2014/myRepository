@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <button onclick="closed()">closed</button>
+  <button onclick="goPage()">goPage</button>
+  <button onclick="getPhoneInfo()">getPhoneInfo</button>
+
+  <div>
+      <button class="btn" type="button" onclick="btnClick1()">小红的手机号</button>
+  </div>
+  <br/>
+  
+  <div>
+      <button class="btn" type="button" onclick="btnClick2()">打电话给小红</button>
+  </div>
+  <br/>
+  
+  <div>
+      <button class="btn" type="button" onclick="btnClick3()">发短信给小红</button>
+  </div>
+  
+  <div>
+      <button class="btn" type="button" onclick="btnClick4()">点击这里</button>
+  </div>
+  
+  <script src="./EcBridge.js"></script>
+  <script>
+    function closed() {
+      //location.href = "rrcc://showMobile"
+      //window.sdk.close();
+      log("hello", "linhai");
+    }
+    function goPage() {
+      let path = "https://www.baidu.com";
+      let type = "h5";
+      window.sdk.goPage(path, type);
+    }
+    function getPhoneInfo() {
+      let resData = window.sdk.getPhoneInfo();
+      alert(resData);
+    }
+  
+  // OC -> JS
+  function alertMobile() {
+      alert('我是上面的小黄 手机号是:13300001111')
+  }
+  
+  function alertName(msg) {
+      alert('你好 ' + msg + ', 我也很高兴见到你')
+  }
+  
+  function alertSendMsg(num, msg) {
+      alert('这是我的手机号:' + num + ',' + msg + '!!')
+  }
+  
+  // JS -> OC
+  function btnClick1() {
+      location.href = "rrcc://showMobile"
+  }
+  
+  function btnClick2() {
+      location.href = "rrcc://showName_?xiaohuang"
+  }
+  
+  function btnClick3() {
+      location.href = "rrcc://showSendNumber_msg_?13418547900&go climbing this weekend"
+  }
+  
+  function btnClick4() {
+      ocAlert()
+  }
+  
+  function alertFunc() {
+      window.alert("这是一个JS中的弹框！" + ocObj.addB(3,5))
+  }
+  </script>
+</body>
+
+</html>
