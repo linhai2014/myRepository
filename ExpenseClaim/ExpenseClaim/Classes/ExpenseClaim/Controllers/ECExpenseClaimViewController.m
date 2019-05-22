@@ -81,7 +81,7 @@
 }
 
 #pragma mark ---代理方法
-- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info{
+- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerController *,id> *)info{
     
     UIImage *choseImage = info[UIImagePickerControllerEditedImage];
     self.imageView.image = choseImage;

@@ -34,6 +34,7 @@
 		2C6D4B06226D6634007EB7A7 /* ECGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6D4B05226D6634007EB7A7 /* ECGridView.m */; };
 		2C6D4B09226D6D30007EB7A7 /* ECGridView_Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6D4B08226D6D30007EB7A7 /* ECGridView_Config.m */; };
 		2C6D4B0C226D8DEF007EB7A7 /* ECGridCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6D4B0B226D8DEF007EB7A7 /* ECGridCollectionCell.m */; };
+		2CEAAFB52293FEFC0079DCA0 /* VersionCheckerViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEAAFB42293FEFC0079DCA0 /* VersionCheckerViewCtrl.m */; };
 		2CF5D10F227ECD6800D0DD2C /* UserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF5D10E227ECD6800D0DD2C /* UserDefault.m */; };
 		2CF5D114227ECE3D00D0DD2C /* ECUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF5D113227ECE3D00D0DD2C /* ECUserDefault.m */; };
 		2CF5D118227FD5B900D0DD2C /* GuidPagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF5D117227FD5B900D0DD2C /* GuidPagesViewController.m */; };
@@ -116,6 +117,8 @@
 		2C6D4B08226D6D30007EB7A7 /* ECGridView_Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECGridView_Config.m; sourceTree = "<group>"; };
 		2C6D4B0A226D8DEF007EB7A7 /* ECGridCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECGridCollectionCell.h; sourceTree = "<group>"; };
 		2C6D4B0B226D8DEF007EB7A7 /* ECGridCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECGridCollectionCell.m; sourceTree = "<group>"; };
+		2CEAAFB32293FEFC0079DCA0 /* VersionCheckerViewCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VersionCheckerViewCtrl.h; sourceTree = "<group>"; };
+		2CEAAFB42293FEFC0079DCA0 /* VersionCheckerViewCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VersionCheckerViewCtrl.m; sourceTree = "<group>"; };
 		2CF5D10E227ECD6800D0DD2C /* UserDefault.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDefault.m; sourceTree = "<group>"; };
 		2CF5D110227ECD8800D0DD2C /* UserDefault.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDefault.h; sourceTree = "<group>"; };
 		2CF5D112227ECE3D00D0DD2C /* ECUserDefault.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECUserDefault.h; sourceTree = "<group>"; };
@@ -263,6 +266,7 @@
 		2C6D4ADD22645D5D007EB7A7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2CEAAFB22293FECF0079DCA0 /* VersionChecker */,
 				2CF5D11F2280358E00D0DD2C /* JavaScriptCore */,
 				2CF5D115227FD59800D0DD2C /* GuidPage */,
 				2C5DBF3C226FFD0600F453D8 /* Login */,
@@ -405,6 +409,15 @@
 				2C6D4B0B226D8DEF007EB7A7 /* ECGridCollectionCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2CEAAFB22293FECF0079DCA0 /* VersionChecker */ = {
+			isa = PBXGroup;
+			children = (
+				2CEAAFB32293FEFC0079DCA0 /* VersionCheckerViewCtrl.h */,
+				2CEAAFB42293FEFC0079DCA0 /* VersionCheckerViewCtrl.m */,
+			);
+			path = VersionChecker;
 			sourceTree = "<group>";
 		};
 		2CF5D111227ECE2100D0DD2C /* Storage */ = {
@@ -579,6 +592,7 @@
 				2C6D4AFE226D5D7B007EB7A7 /* ECGridItemModel.m in Sources */,
 				2C6D4AF82264676F007EB7A7 /* ECMeViewController.m in Sources */,
 				2C6D4B09226D6D30007EB7A7 /* ECGridView_Config.m in Sources */,
+				2CEAAFB52293FEFC0079DCA0 /* VersionCheckerViewCtrl.m in Sources */,
 				2C5DBF49227001C100F453D8 /* UIView+Add.m in Sources */,
 				2C6D4ADC22645562007EB7A7 /* ECTabBarViewController.m in Sources */,
 				2C6D4B02226D5F22007EB7A7 /* ECHomeTableViewCell.m in Sources */,
